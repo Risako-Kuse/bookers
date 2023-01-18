@@ -1,21 +1,22 @@
 <body>
+   <%= flash[:notice] %>
 
   <tr>
     <p>
    <strong>Title:</strong>
-   <%= @bookes.title %>
+   <%= @book.title %>
   　</p>
   </tr>
 
   <tr>
    <P>
       <strong>Body:</strong>
-    <%= @bookes.body %>
+    <%= @book.body %>
    </p>
   </tr>
 
   <tr>
-    <%= link_to "Edit", edit_book_path(@bookes.id) %> | <%= link_to "Back", books_path %>
+    <%= link_to "Edit", edit_book_path(@book.id) %> | <%= link_to "Back", books_path %>
   </tr>
 
 </body>
